@@ -1,0 +1,20 @@
+{
+  "database" : {
+    "name" : "EssbaseDB",
+    "description" : "Test essbase database.\nEssbase server upon import mapped to a (essbase) database",
+    "databaseType" : "ESSBASE",
+    "connectionPools" : [ {
+      "name" : "SampleEssbaseConn",
+      "description" : "This is a place holder essbase connection for prototype.",
+      "connection" : "'system'.'Place holder EssBase Connection'",
+      "remoteConnection" : false,
+      "requiresFullyQualifedTableNames" : false,
+      "multithreaded" : false,
+      "supportParams" : false
+    } ],
+    "virtualPrivateDatabase" : false,
+    "crmMetadataTables" : false,
+    "allowDirectDatabaseRequests" : false,
+    "allowPopulateQueries" : false
+  }
+}

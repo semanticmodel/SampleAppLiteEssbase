@@ -1,0 +1,373 @@
+{
+  "logicalTable" : {
+    "name" : "Measures",
+    "description" : "A measure physical dimension",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Measures - Default",
+      "description" : "a  measure cube column with a  columnType as ATTRIBUTE and attributeHierarchy pointing to a hierarchy; No other columnType requires the attribute of attributeHierarchy.",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Measures - Default" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Measures - Dummy",
+      "description" : "a  measure cube column with a  columnType as MEMBER_ALIAS; does not require the attribute of attributeHierarchy.",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Measures - Dummy" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Measures - Member ID",
+      "description" : "a  measure cube column with a  columnType as MEMBER_ALIAS; does not require the attribute of attributeHierarchy.",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Measures - Member ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Measures Root Indicator",
+      "description" : "a  measure cube column with a  columnType as ROOT; does not require the attribute of attributeHierarchy.",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Measures Root Indicator" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Measures Leaf Indicator",
+      "description" : "a  measure cube column with a  columnType as LEAF; does not require the attribute of attributeHierarchy.",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Measures Leaf Indicator" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Gen1,Measures - Member Key",
+      "description" : "another gen1 cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen1,Measures - Member Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen1,Measures"
+    }, {
+      "name" : "Gen1,Measures - Memnor",
+      "description" : "another gen1 cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen1,Measures - Memnor" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen1,Measures"
+    }, {
+      "name" : "Gen1,Measures",
+      "description" : "another  cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen1,Measures" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen1,Measures"
+    }, {
+      "name" : "Gen2,Measures - Ancestor Ref",
+      "description" : "another gen2 ancestor cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen2,Measures - Ancestor Ref" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen2,Measures"
+    }, {
+      "name" : "Gen2,Measures - Member Key",
+      "description" : "another gen2 MEMBER_KEY cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen2,Measures - Member Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen2,Measures"
+    }, {
+      "name" : "Gen2,Measures - Memnor",
+      "description" : "another gen2 Memnor cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen2,Measures - Memnor" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen2,Measures"
+    }, {
+      "name" : "Gen2,Measures",
+      "description" : "another 1  cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen2,Measures" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen2,Measures"
+    }, {
+      "name" : "Gen3,Measures - Ancestor Ref",
+      "description" : "another gen3 ancestor cube column without a columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen3,Measures - Ancestor Ref" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen3,Measures"
+    }, {
+      "name" : "Gen3,Measures - Member Key",
+      "description" : "another gen3 MEMBER_KEY cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen3,Measures - Member Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen3,Measures"
+    }, {
+      "name" : "Gen3,Measures - Memnor",
+      "description" : "another gen3 Memnor cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen3,Measures - Memnor" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen3,Measures"
+    }, {
+      "name" : "Gen3,Measures",
+      "description" : "another 3  cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen3,Measures" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen3,Measures"
+    }, {
+      "name" : "Gen4,Measures - Ancestor Ref",
+      "description" : "another gen4 ancestor cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen4,Measures - Ancestor Ref" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen4,Measures"
+    }, {
+      "name" : "Gen4,Measures - Member Key",
+      "description" : "another gen4 MEMBER_KEY cube column with a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen4,Measures - Member Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen4,Measures"
+    }, {
+      "name" : "Gen4,Measures - Memnor",
+      "description" : "another gen4 Memnor cube column with a  columnType with a icon that looks like a key",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen4,Measures - Memnor" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen4,Measures"
+    }, {
+      "name" : "Gen4,Measures",
+      "description" : "another 4  cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen4,Measures" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen4,Measures"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SAMP_CUBE_TABLE",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalCubeTable:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Gen1,Measures",
+      "ragged" : true,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Gen1,Measures",
+        "numberOfElements" : 0,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Gen1,Measures" ],
+        "displayKey" : "Gen1,Measures"
+      }, {
+        "name" : "Gen2,Measures",
+        "numberOfElements" : 0,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Gen2,Measures" ],
+        "displayKey" : "Gen2,Measures"
+      }, {
+        "name" : "Gen3,Measures",
+        "numberOfElements" : 0,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Gen3,Measures" ],
+        "displayKey" : "Gen3,Measures"
+      }, {
+        "name" : "Gen4,Measures",
+        "numberOfElements" : 0,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Gen4,Measures" ],
+        "displayKey" : "Gen4,Measures"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Measures",
+        "description" : " This is a measure physical hierarchy of type unbalanced",
+        "levels" : [ "Gen1,Measures", "Gen2,Measures", "Gen3,Measures", "Gen4,Measures" ]
+      } ]
+    }
+  }
+}

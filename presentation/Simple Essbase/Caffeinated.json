@@ -1,0 +1,54 @@
+{
+  "presentationTable" : {
+    "name" : "Caffeinated",
+    "presentationColumns" : [ {
+      "name" : "Caffeinated - Default",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Caffeinated - Default"
+    }, {
+      "name" : "Caffeinated - Dummy",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Caffeinated - Dummy"
+    }, {
+      "name" : "Caffeinated - Member ID",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Caffeinated - Member ID"
+    }, {
+      "name" : "Caffeinated Root Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Caffeinated Root Indicator"
+    }, {
+      "name" : "Caffeinated Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Caffeinated Leaf Indicator"
+    }, {
+      "name" : "Gen1,Caffeinated - Member Key",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Gen1,Caffeinated - Member Key"
+    }, {
+      "name" : "Gen1,Caffeinated - Memnor",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Gen1,Caffeinated - Memnor"
+    }, {
+      "name" : "Gen1,Caffeinated",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Gen1,Caffeinated"
+    }, {
+      "name" : "Gen2,Caffeinated - Ancestor Ref",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Gen2,Caffeinated - Ancestor Ref"
+    }, {
+      "name" : "Gen2,Caffeinated - Member Key",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Gen2,Caffeinated - Member Key"
+    }, {
+      "name" : "Gen2,Caffeinated - Memnor",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Gen2,Caffeinated - Memnor"
+    }, {
+      "name" : "Gen2,Caffeinated",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.Caffeinated.Gen2,Caffeinated"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Caffeinated",
+      "sourceLogicalTable" : "logicalTable:Test-BusinessModel.Caffeinated",
+      "levels" : [ {
+        "name" : "Gen1,Caffeinated",
+        "sourceLogicalLevel" : "logicalLevel:Test-BusinessModel.Caffeinated.Gen1,Caffeinated"
+      }, {
+        "name" : "Gen2,Caffeinated",
+        "sourceLogicalLevel" : "logicalLevel:Test-BusinessModel.Caffeinated.Gen2,Caffeinated",
+        "displayColumn" : "presentationColumn:Simple Essbase.Caffeinated.Gen2,Caffeinated"
+      } ]
+    } ]
+  }
+}

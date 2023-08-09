@@ -1,0 +1,30 @@
+{
+  "presentationTable" : {
+    "name" : "SAMP_EMPL_D",
+    "presentationColumns" : [ {
+      "name" : "EMPLOYEE_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.SAMP_EMPL_D.EMPLOYEE_KEY"
+    }, {
+      "name" : "EMPL_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.SAMP_EMPL_D.EMPL_NAME"
+    }, {
+      "name" : "POSTN_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.SAMP_EMPL_D.POSTN_KEY"
+    }, {
+      "name" : "HIRE_DT",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.SAMP_EMPL_D.HIRE_DT"
+    }, {
+      "name" : "MGR_ID",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.SAMP_EMPL_D.MGR_ID"
+    }, {
+      "name" : "TYPE",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.SAMP_EMPL_D.TYPE"
+    }, {
+      "name" : "POSTN_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.SAMP_EMPL_D.POSTN_DESC"
+    }, {
+      "name" : "POSTN_LEVEL",
+      "sourceLogicalColumn" : "logicalColumn:Test-BusinessModel.SAMP_EMPL_D.POSTN_LEVEL"
+    } ]
+  }
+}

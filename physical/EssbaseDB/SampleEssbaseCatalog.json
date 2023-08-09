@@ -1,0 +1,7 @@
+{
+  "catalog" : {
+    "name" : "SampleEssbaseCatalog",
+    "description" : "This is a place holder for an Essbase catalog that corresponds to an Essbase application ",
+    "dynamicName" : "variable:GlobalVariables.Variable_1"
+  }
+}

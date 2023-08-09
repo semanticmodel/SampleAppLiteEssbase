@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "SAMP_CUBE_TABLE",
+    "presentationColumns" : [ {
+      "name" : "Basic Measure",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.SAMP_CUBE_TABLE.Basic Measure"
+    }, {
+      "name" : "Category - Ancester Ref",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.SAMP_CUBE_TABLE.Category - Ancester Ref"
+    }, {
+      "name" : "Category - Member Key",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.SAMP_CUBE_TABLE.Category - Member Key"
+    }, {
+      "name" : "Category - Memnor",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.SAMP_CUBE_TABLE.Category - Memnor"
+    }, {
+      "name" : "Category",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.SAMP_CUBE_TABLE.Category"
+    } ]
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "logicalTable" : {
+    "name" : "Caffeinated",
+    "description" : "A simple physical dimension",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Caffeinated - Default",
+      "description" : "a  cube column with a  columnType as ATTRIBUTE and attributeHierarchy pointing to a hierarchy; No other columnType requires the attribute of attributeHierarchy.",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Caffeinated - Default" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Caffeinated - Dummy",
+      "description" : "a  cube column with a  columnType as MEMBER_ALIAS; does not require the attribute of attributeHierarchy.",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Caffeinated - Dummy" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Caffeinated - Member ID",
+      "description" : "a  cube column with a  columnType as MEMBER_ALIAS; does not require the attribute of attributeHierarchy.",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Caffeinated - Member ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Caffeinated Root Indicator",
+      "description" : "a  cube column with a  columnType as ROOT; does not require the attribute of attributeHierarchy.",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Caffeinated Root Indicator" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Caffeinated Leaf Indicator",
+      "description" : "a  cube column with a  columnType as LEAF; does not require the attribute of attributeHierarchy.",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Caffeinated Leaf Indicator" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Gen1,Caffeinated - Member Key",
+      "description" : "another gen1 cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen1,Caffeinated - Member Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen1,Caffeinated"
+    }, {
+      "name" : "Gen1,Caffeinated - Memnor",
+      "description" : "another gen1 cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen1,Caffeinated - Memnor" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen1,Caffeinated"
+    }, {
+      "name" : "Gen1,Caffeinated",
+      "description" : "another  cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen1,Caffeinated" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen1,Caffeinated"
+    }, {
+      "name" : "Gen2,Caffeinated - Ancestor Ref",
+      "description" : "another gen2 ancestor cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen2,Caffeinated - Ancestor Ref" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen2,Caffeinated"
+    }, {
+      "name" : "Gen2,Caffeinated - Member Key",
+      "description" : "another gen2 MEMBER_KEY cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen2,Caffeinated - Member Key" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen2,Caffeinated"
+    }, {
+      "name" : "Gen2,Caffeinated - Memnor",
+      "description" : "another gen2 Memnor cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen2,Caffeinated - Memnor" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen2,Caffeinated"
+    }, {
+      "name" : "Gen2,Caffeinated",
+      "description" : "another 1  cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Gen2,Caffeinated" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gen2,Caffeinated"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SAMP_CUBE_TABLE",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalCubeTable:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "ragged" : true,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Gen1,Caffeinated",
+        "numberOfElements" : 0,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Gen1,Caffeinated" ],
+        "displayKey" : "Gen1,Caffeinated"
+      }, {
+        "name" : "Gen2,Caffeinated",
+        "numberOfElements" : 0,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Gen2,Caffeinated" ],
+        "displayKey" : "Gen2,Caffeinated"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Caffeinated",
+        "description" : " This is a physical hierarchy of type unbalanced",
+        "levels" : [ "Gen1,Caffeinated", "Gen2,Caffeinated" ]
+      } ]
+    }
+  }
+}

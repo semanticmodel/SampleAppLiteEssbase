@@ -1,0 +1,54 @@
+{
+  "presentationTable" : {
+    "name" : "Caffeinated",
+    "presentationColumns" : [ {
+      "name" : "Caffeinated - Default",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Caffeinated - Default"
+    }, {
+      "name" : "Caffeinated - Dummy",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Caffeinated - Dummy"
+    }, {
+      "name" : "Caffeinated - Member ID",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Caffeinated - Member ID"
+    }, {
+      "name" : "Caffeinated Root Indicator",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Caffeinated Root Indicator"
+    }, {
+      "name" : "Caffeinated Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Caffeinated Leaf Indicator"
+    }, {
+      "name" : "Gen1,Caffeinated - Member Key",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Gen1,Caffeinated - Member Key"
+    }, {
+      "name" : "Gen1,Caffeinated - Memnor",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Gen1,Caffeinated - Memnor"
+    }, {
+      "name" : "Gen1,Caffeinated",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Gen1,Caffeinated"
+    }, {
+      "name" : "Gen2,Caffeinated - Ancestor Ref",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Gen2,Caffeinated - Ancestor Ref"
+    }, {
+      "name" : "Gen2,Caffeinated - Member Key",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Gen2,Caffeinated - Member Key"
+    }, {
+      "name" : "Gen2,Caffeinated - Memnor",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Gen2,Caffeinated - Memnor"
+    }, {
+      "name" : "Gen2,Caffeinated",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Caffeinated.Gen2,Caffeinated"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Caffeinated",
+      "sourceLogicalTable" : "logicalTable:SAMP_CUBE_TABLE.Caffeinated",
+      "levels" : [ {
+        "name" : "Gen1,Caffeinated",
+        "sourceLogicalLevel" : "logicalLevel:SAMP_CUBE_TABLE.Caffeinated.Gen1,Caffeinated"
+      }, {
+        "name" : "Gen2,Caffeinated",
+        "sourceLogicalLevel" : "logicalLevel:SAMP_CUBE_TABLE.Caffeinated.Gen2,Caffeinated",
+        "displayColumn" : "presentationColumn:Sample Essbase.Caffeinated.Gen2,Caffeinated"
+      } ]
+    } ]
+  }
+}

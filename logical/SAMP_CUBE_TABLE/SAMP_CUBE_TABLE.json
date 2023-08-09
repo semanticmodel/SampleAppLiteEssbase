@@ -1,0 +1,107 @@
+{
+  "logicalTable" : {
+    "name" : "SAMP_CUBE_TABLE",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Basic Measure",
+      "description" : "a  cube column without a specific columnType",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Basic Measure" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "EXTERNAL_AGGREGATION",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Category - Ancester Ref",
+      "description" : "a  cube column with a columnType as ANCESTOR_REFERENCE; does not require the attribute of attributeHierarchy.",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Category - Ancester Ref" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Category - Member Key",
+      "description" : "a  cube column with a valid columnType as MEMBER_KEY; does not require the attribute of attributeHierarchy.",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Category - Member Key" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Category - Memnor",
+      "description" : "a  cube column with a valid columnType as OUTLINE_SORT; does not require the attribute of attributeHierarchy.",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Category - Memnor" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Category",
+      "description" : "a  cube column without a  columnType with a icon that looks like a key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SAMP_CUBE_TABLE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalCubeColumn:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE.Category" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SAMP_CUBE_TABLE",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalCubeTable:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:SAMP_CUBE_TABLE.Caffeinated",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "rightTable" : "logicalTable:SAMP_CUBE_TABLE.Measures",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}

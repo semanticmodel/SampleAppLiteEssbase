@@ -1,0 +1,24 @@
+{
+  "initBlock" : {
+    "name" : "GlobalVariables",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:Sample App Lite Data.SampleApp_Lite_Xml",
+    "variables" : [ {
+      "name" : "Variable_1",
+      "description" : "sample",
+      "value" : "'abc'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    }, {
+      "name" : "Variable_2",
+      "description" : "sample 2",
+      "value" : "'xyz'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : false,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : false
+  }
+}

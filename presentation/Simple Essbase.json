@@ -1,0 +1,11 @@
+{
+  "subjectArea" : {
+    "name" : "Simple Essbase",
+    "sourceBusinessModel" : "businessModel:Test-BusinessModel",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Simple Essbase.Caffeinated"
+    }, {
+      "name" : "presentationTable:Simple Essbase.SAMP_EMPL_D"
+    } ]
+  }
+}

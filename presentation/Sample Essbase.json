@@ -1,0 +1,13 @@
+{
+  "subjectArea" : {
+    "name" : "Sample Essbase",
+    "sourceBusinessModel" : "businessModel:SAMP_CUBE_TABLE",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Sample Essbase.Caffeinated"
+    }, {
+      "name" : "presentationTable:Sample Essbase.Measures"
+    }, {
+      "name" : "presentationTable:Sample Essbase.SAMP_CUBE_TABLE"
+    } ]
+  }
+}

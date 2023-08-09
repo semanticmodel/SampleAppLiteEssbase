@@ -1,0 +1,86 @@
+{
+  "presentationTable" : {
+    "name" : "Measures",
+    "presentationColumns" : [ {
+      "name" : "Measures - Default",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Measures - Default"
+    }, {
+      "name" : "Measures - Dummy",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Measures - Dummy"
+    }, {
+      "name" : "Measures - Member ID",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Measures - Member ID"
+    }, {
+      "name" : "Measures Root Indicator",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Measures Root Indicator"
+    }, {
+      "name" : "Measures Leaf Indicator",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Measures Leaf Indicator"
+    }, {
+      "name" : "Gen1,Measures - Member Key",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen1,Measures - Member Key"
+    }, {
+      "name" : "Gen1,Measures - Memnor",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen1,Measures - Memnor"
+    }, {
+      "name" : "Gen1,Measures",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen1,Measures"
+    }, {
+      "name" : "Gen2,Measures - Ancestor Ref",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen2,Measures - Ancestor Ref"
+    }, {
+      "name" : "Gen2,Measures - Member Key",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen2,Measures - Member Key"
+    }, {
+      "name" : "Gen2,Measures - Memnor",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen2,Measures - Memnor"
+    }, {
+      "name" : "Gen2,Measures",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen2,Measures"
+    }, {
+      "name" : "Gen3,Measures - Ancestor Ref",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen3,Measures - Ancestor Ref"
+    }, {
+      "name" : "Gen3,Measures - Member Key",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen3,Measures - Member Key"
+    }, {
+      "name" : "Gen3,Measures - Memnor",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen3,Measures - Memnor"
+    }, {
+      "name" : "Gen3,Measures",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen3,Measures"
+    }, {
+      "name" : "Gen4,Measures - Ancestor Ref",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen4,Measures - Ancestor Ref"
+    }, {
+      "name" : "Gen4,Measures - Member Key",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen4,Measures - Member Key"
+    }, {
+      "name" : "Gen4,Measures - Memnor",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen4,Measures - Memnor"
+    }, {
+      "name" : "Gen4,Measures",
+      "sourceLogicalColumn" : "logicalColumn:SAMP_CUBE_TABLE.Measures.Gen4,Measures"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Measures",
+      "sourceLogicalTable" : "logicalTable:SAMP_CUBE_TABLE.Measures",
+      "levels" : [ {
+        "name" : "Gen1,Measures",
+        "sourceLogicalLevel" : "logicalLevel:SAMP_CUBE_TABLE.Measures.Gen1,Measures"
+      }, {
+        "name" : "Gen2,Measures",
+        "sourceLogicalLevel" : "logicalLevel:SAMP_CUBE_TABLE.Measures.Gen2,Measures",
+        "displayColumn" : "presentationColumn:Sample Essbase.Measures.Gen2,Measures"
+      }, {
+        "name" : "Gen3,Measures",
+        "sourceLogicalLevel" : "logicalLevel:SAMP_CUBE_TABLE.Measures.Gen3,Measures",
+        "displayColumn" : "presentationColumn:Sample Essbase.Measures.Gen3,Measures"
+      }, {
+        "name" : "Gen4,Measures",
+        "sourceLogicalLevel" : "logicalLevel:SAMP_CUBE_TABLE.Measures.Gen4,Measures",
+        "displayColumn" : "presentationColumn:Sample Essbase.Measures.Gen4,Measures"
+      } ]
+    } ]
+  }
+}

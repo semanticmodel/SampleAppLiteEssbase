@@ -1,0 +1,7 @@
+{
+  "businessModel" : {
+    "name" : "SAMP_CUBE_TABLE",
+    "description" : "businessModel created off physicalCubeTable:EssbaseDB.SampleEssbaseCatalog.SAMP_CUBE_TABLE",
+    "disable" : false
+  }
+}

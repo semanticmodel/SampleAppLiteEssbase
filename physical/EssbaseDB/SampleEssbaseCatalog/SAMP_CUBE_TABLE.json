@@ -1,0 +1,459 @@
+{
+   "physicalCubeTable": {
+      "name": "SAMP_CUBE_TABLE",
+      "description": "Sample Physical Cube Table, under an essbase application equivalent to a physical catalog, which in turn under an essbase server (aka essbase DB)",
+      "externalName": "Basic Cube Table",
+      "displayColumnAlias": "Member ID",
+      "physicalCubeColumns": [
+         {
+            "name": "Basic Measure",
+            "description": "a  cube column without a specific columnType",
+            "dataType": "DOUBLE",
+            "length": 0,
+            "nullable": true,
+            "externalName": "Basic - measure",
+            "aggregationRule": "EXTERNAL_AGGREGATION"
+         },
+         {
+            "name": "Category - Ancester Ref",
+            "description": "a  cube column with a columnType as ANCESTOR_REFERENCE; does not require the attribute of attributeHierarchy.",
+            "dataType": "VARCHAR",
+            "length": 100,
+            "nullable": false,
+            "externalName": "Ancester_Names",
+            "columnType": "ANCESTOR_REFERENCE",
+            "aggregationRule": "NONE"
+         },
+         {
+            "name": "Category - Member Key",
+            "description": "a  cube column with a valid columnType as MEMBER_KEY; does not require the attribute of attributeHierarchy.",
+            "dataType": "VARCHAR",
+            "length": 128,
+            "nullable": false,
+            "externalName": "MEMBER_UNIQUE_NAME",
+            "columnType": "MEMBER_KEY",
+            "aggregationRule": "NONE"
+         },
+         {
+            "name": "Category - Memnor",
+            "description": "a  cube column with a valid columnType as OUTLINE_SORT; does not require the attribute of attributeHierarchy.",
+            "dataType": "VARCHAR",
+            "length": 128,
+            "nullable": false,
+            "externalName": "Memnor",
+            "columnType": "OUTLINE_SORT",
+            "aggregationRule": "NONE"
+         },
+         {
+            "name": "Category",
+            "description": "a  cube column without a  columnType with a icon that looks like a key",
+            "dataType": "VARCHAR",
+            "length": 128,
+            "nullable": true,
+            "externalName": "Category",
+            "aggregationRule": "NONE"
+         }
+      ],
+      "physicalDimensions": [
+         {
+            "name": "Caffeinated",
+            "description": "A simple physical dimension",
+            "dimensionProperties": [
+               {
+                  "name": "Caffeinated - Default",
+                  "description": "a  cube column with a  columnType as ATTRIBUTE and attributeHierarchy pointing to a hierarchy; No other columnType requires the attribute of attributeHierarchy.",
+                  "dataType": "VARCHAR",
+                  "length": 128,
+                  "nullable": false,
+                  "externalName": "Default",
+                  "columnType": "ATTRIBUTE",
+                  "aggregationRule": "COUNT",
+                  "attributeHierarchy": "Intro Date"
+               },
+               {
+                  "name": "Caffeinated - Dummy",
+                  "description": "a  cube column with a  columnType as MEMBER_ALIAS; does not require the attribute of attributeHierarchy.",
+                  "dataType": "VARCHAR",
+                  "length": 128,
+                  "nullable": false,
+                  "externalName": "Dummy",
+                  "columnType": "MEMBER_ALIAS",
+                  "aggregationRule": "NONE"
+               },
+               {
+                  "name": "Caffeinated - Member ID",
+                  "description": "a  cube column with a  columnType as MEMBER_ALIAS; does not require the attribute of attributeHierarchy.",
+                  "dataType": "VARCHAR",
+                  "length": 128,
+                  "nullable": false,
+                  "externalName": "Member ID",
+                  "columnType": "MEMBER_ALIAS",
+                  "aggregationRule": "NONE"
+               },
+               {
+                  "name": "Caffeinated Root Indicator",
+                  "description": "a  cube column with a  columnType as ROOT; does not require the attribute of attributeHierarchy.",
+                  "dataType": "INT",
+                  "length": 0,
+                  "nullable": false,
+                  "externalName": "GEN_NUMBER",
+                  "columnType": "ROOT",
+                  "aggregationRule": "NONE"
+               },
+               {
+                  "name": "Caffeinated Leaf Indicator",
+                  "description": "a  cube column with a  columnType as LEAF; does not require the attribute of attributeHierarchy.",
+                  "dataType": "INT",
+                  "length": 0,
+                  "nullable": false,
+                  "externalName": "LEVEL_NUMBER",
+                  "columnType": "LEAF",
+                  "aggregationRule": "NONE"
+               }
+            ],
+            "hierarchies": [
+               {
+                  "name": "Caffeinated",
+                  "description": " This is a physical hierarchy of type unbalanced",
+                  "externalName": "Caffeinated",
+                  "dimensionName": "Caffeinated",
+                  "dimensionType": "ATTRIBUTE_DIMENSION",
+                  "hierarchyType": "UNBALANCED",
+                  "defaultMemberTypeAll": true,
+                  "useUnQualifiedMemberName": true,
+                  "physicalLevels": [
+                     {
+                        "name": "Gen1,Caffeinated",
+                        "description": "A sample physical level",
+                        "externalName": "Gen1,Caffeinated",
+                        "key": {
+                           "name": "Gen1,Caffeinated",
+                           "description": "another  cube column without a  columnType with a icon that looks like a key",
+                           "dataType": "VARCHAR",
+                           "length": 128,
+                           "nullable": true,
+                           "externalName": "Gen1,Caffeinated",
+                           "aggregationRule": "NONE"
+                        },
+                        "columns": [
+                           {
+                              "name": "Gen1,Caffeinated - Member Key",
+                              "description": "another gen1 cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 128,
+                              "nullable": true,
+                              "externalName": "MEMBER_UNIQUE_NAME",
+                              "columnType": "MEMBER_KEY",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen1,Caffeinated - Memnor",
+                              "description": "another gen1 cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "INT",
+                              "length": 0,
+                              "nullable": false,
+                              "externalName": "Memnor",
+                              "columnType": "OUTLINE_SORT",
+                              "aggregationRule": "NONE"
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Gen2,Caffeinated",
+                        "description": "Another sample physical level",
+                        "externalName": "Gen2,Caffeinated",
+                        "key": {
+                           "name": "Gen2,Caffeinated",
+                           "description": "another 1  cube column without a  columnType with a icon that looks like a key",
+                           "dataType": "VARCHAR",
+                           "length": 128,
+                           "nullable": true,
+                           "externalName": "Gen2,Caffeinated",
+                           "aggregationRule": "NONE"
+                        },
+                        "columns": [
+                           {
+                              "name": "Gen2,Caffeinated - Ancestor Ref",
+                              "description": "another gen2 ancestor cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 100,
+                              "nullable": false,
+                              "externalName": "Ancestor_Names",
+                              "columnType": "ANCESTOR_REFERENCE",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen2,Caffeinated - Member Key",
+                              "description": "another gen2 MEMBER_KEY cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 128,
+                              "nullable": true,
+                              "externalName": "MEMBER_UNIQUE_NAME",
+                              "columnType": "MEMBER_KEY",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen2,Caffeinated - Memnor",
+                              "description": "another gen2 Memnor cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "INT",
+                              "length": 0,
+                              "nullable": false,
+                              "externalName": "Memnor",
+                              "columnType": "OUTLINE_SORT",
+                              "aggregationRule": "NONE"
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "name": "Measures",
+            "description": "A measure physical dimension",
+            "convertedToFlatHierarchy": false,
+            "dimensionProperties": [
+               {
+                  "name": "Measures - Default",
+                  "description": "a  measure cube column with a  columnType as ATTRIBUTE and attributeHierarchy pointing to a hierarchy; No other columnType requires the attribute of attributeHierarchy.",
+                  "dataType": "VARCHAR",
+                  "length": 128,
+                  "nullable": false,
+                  "externalName": "Default",
+                  "columnType": "MEMBER_ALIAS",
+                  "aggregationRule": "NONE"
+               },
+               {
+                  "name": "Measures - Dummy",
+                  "description": "a  measure cube column with a  columnType as MEMBER_ALIAS; does not require the attribute of attributeHierarchy.",
+                  "dataType": "VARCHAR",
+                  "length": 128,
+                  "nullable": false,
+                  "externalName": "Dummy",
+                  "columnType": "MEMBER_ALIAS",
+                  "aggregationRule": "NONE"
+               },
+               {
+                  "name": "Measures - Member ID",
+                  "description": "a  measure cube column with a  columnType as MEMBER_ALIAS; does not require the attribute of attributeHierarchy.",
+                  "dataType": "VARCHAR",
+                  "length": 128,
+                  "nullable": false,
+                  "externalName": "Member ID",
+                  "columnType": "MEMBER_ALIAS",
+                  "aggregationRule": "NONE"
+               },
+               {
+                  "name": "Measures Root Indicator",
+                  "description": "a  measure cube column with a  columnType as ROOT; does not require the attribute of attributeHierarchy.",
+                  "dataType": "INT",
+                  "length": 0,
+                  "nullable": false,
+                  "externalName": "GEN_NUMBER",
+                  "columnType": "ROOT",
+                  "aggregationRule": "NONE"
+               },
+               {
+                  "name": "Measures Leaf Indicator",
+                  "description": "a  measure cube column with a  columnType as LEAF; does not require the attribute of attributeHierarchy.",
+                  "dataType": "INT",
+                  "length": 0,
+                  "nullable": false,
+                  "externalName": "LEVEL_NUMBER",
+                  "columnType": "LEAF",
+                  "aggregationRule": "NONE"
+               }
+            ],
+            "hierarchies": [
+               {
+                  "name": "Measures",
+                  "description": " This is a measure physical hierarchy of type unbalanced",
+                  "externalName": "Measures",
+                  "dimensionName": "Measures",
+                  "dimensionType": "MEASURE_DIMENSION",
+                  "hierarchyType": "UNBALANCED",
+                  "defaultMemberTypeAll": true,
+                  "useUnQualifiedMemberName": true,
+                  "physicalLevels": [
+                     {
+                        "name": "Gen1,Measures",
+                        "description": "A sample measure physical level",
+                        "externalName": "Gen1,Measures",
+                        "key": {
+                           "name": "Gen1,Measures",
+                           "description": "another  cube column without a  columnType with a icon that looks like a key",
+                           "dataType": "VARCHAR",
+                           "length": 128,
+                           "nullable": true,
+                           "externalName": "Gen1,Measures",
+                           "aggregationRule": "NONE"
+                        },
+                        "columns": [
+                           {
+                              "name": "Gen1,Measures - Member Key",
+                              "description": "another gen1 cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 128,
+                              "nullable": true,
+                              "externalName": "MEMBER_UNIQUE_NAME",
+                              "columnType": "MEMBER_KEY",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen1,Measures - Memnor",
+                              "description": "another gen1 cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "INT",
+                              "length": 0,
+                              "nullable": false,
+                              "externalName": "Memnor",
+                              "columnType": "OUTLINE_SORT",
+                              "aggregationRule": "NONE"
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Gen2,Measures",
+                        "description": "Another sample physical level",
+                        "externalName": "Gen2,Measures",
+                        "key": {
+                           "name": "Gen2,Measures",
+                           "description": "another 1  cube column without a  columnType with a icon that looks like a key",
+                           "dataType": "VARCHAR",
+                           "length": 128,
+                           "nullable": true,
+                           "externalName": "Gen2,Measures",
+                           "aggregationRule": "NONE"
+                        },
+                        "columns": [
+                           {
+                              "name": "Gen2,Measures - Ancestor Ref",
+                              "description": "another gen2 ancestor cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 100,
+                              "nullable": false,
+                              "externalName": "Ancestor_Names",
+                              "columnType": "ANCESTOR_REFERENCE",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen2,Measures - Member Key",
+                              "description": "another gen2 MEMBER_KEY cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 128,
+                              "nullable": true,
+                              "externalName": "MEMBER_UNIQUE_NAME",
+                              "columnType": "MEMBER_KEY",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen2,Measures - Memnor",
+                              "description": "another gen2 Memnor cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "INT",
+                              "length": 0,
+                              "nullable": false,
+                              "externalName": "Memnor",
+                              "columnType": "OUTLINE_SORT",
+                              "aggregationRule": "NONE"
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Gen3,Measures",
+                        "description": "Another sample physical level",
+                        "externalName": "Gen3,Measures",
+                        "key": {
+                           "name": "Gen3,Measures",
+                           "description": "another 3  cube column without a  columnType with a icon that looks like a key",
+                           "dataType": "VARCHAR",
+                           "length": 128,
+                           "nullable": true,
+                           "externalName": "Gen3,Measures",
+                           "aggregationRule": "NONE"
+                        },
+                        "columns": [
+                           {
+                              "name": "Gen3,Measures - Ancestor Ref",
+                              "description": "another gen3 ancestor cube column without a columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 100,
+                              "nullable": false,
+                              "externalName": "Ancestor_Names",
+                              "columnType": "ANCESTOR_REFERENCE",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen3,Measures - Member Key",
+                              "description": "another gen3 MEMBER_KEY cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 128,
+                              "nullable": true,
+                              "externalName": "MEMBER_UNIQUE_NAME",
+                              "columnType": "MEMBER_KEY",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen3,Measures - Memnor",
+                              "description": "another gen3 Memnor cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "INT",
+                              "length": 0,
+                              "nullable": false,
+                              "externalName": "Memnor",
+                              "columnType": "OUTLINE_SORT",
+                              "aggregationRule": "NONE"
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Gen4,Measures",
+                        "description": "Another sample physical level",
+                        "externalName": "Gen4,Measures",
+                        "key": {
+                           "name": "Gen4,Measures",
+                           "description": "another 4  cube column without a  columnType with a icon that looks like a key",
+                           "dataType": "VARCHAR",
+                           "length": 128,
+                           "nullable": true,
+                           "externalName": "Gen4,Measures",
+                           "aggregationRule": "NONE"
+                        },
+                        "columns": [
+                           {
+                              "name": "Gen4,Measures - Ancestor Ref",
+                              "description": "another gen4 ancestor cube column without a  columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 100,
+                              "nullable": false,
+                              "externalName": "Ancestor_Names",
+                              "columnType": "ANCESTOR_REFERENCE",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen4,Measures - Member Key",
+                              "description": "another gen4 MEMBER_KEY cube column with a  columnType with a icon that looks like a key",
+                              "dataType": "VARCHAR",
+                              "length": 128,
+                              "nullable": true,
+                              "externalName": "MEMBER_UNIQUE_NAME",
+                              "columnType": "MEMBER_KEY",
+                              "aggregationRule": "NONE"
+                           },
+                           {
+                              "name": "Gen4,Measures - Memnor",
+                              "description": "another gen4 Memnor cube column with a  columnType with a icon that looks like a key",
+                              "dataType": "INT",
+                              "length": 0,
+                              "nullable": false,
+                              "externalName": "Memnor",
+                              "columnType": "OUTLINE_SORT",
+                              "aggregationRule": "NONE"
+                           }
+                        ]
+                     }
+                  ]
+               }
+            ]
+         }
+      ],
+      "overrideSourceCacheSetting": false
+   }
+}
